@@ -32,16 +32,20 @@ function displayInputList() {
 
   const listBody = document.createElement("div");
   listBody.classList.add("list_body");
-  inputList.appendChild(listBody)
+  inputList.appendChild(listBody);
 
   studentArray.forEach((list) => {
+    const listWrap = document.createElement("div");
+    listWrap.classList.add("list_wrap");
+    listBody.appendChild(listWrap);
+
     const listName = document.createElement("p");
     listName.textContent = list.name;
-    listBody.appendChild(listName);
+    listWrap.appendChild(listName);
 
-    const listScore = document.createElement('p')
-    listScore.textContent = list.score
-    listBody.appendChild(listScore)
+    const listScore = document.createElement("p");
+    listScore.textContent = list.score;
+    listWrap.appendChild(listScore);
   });
 
   studentName.value = "";
