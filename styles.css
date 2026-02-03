@@ -1,49 +1,49 @@
 @font-face {
-    font-family: 'Cinzel';
-    src: url(assets/fonts/Cinzel-VariableFont_wght.ttf) format('ttf');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cinzel";
+  src: url(assets/fonts/Cinzel-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url(assets/fonts/Ubuntu-Regular.ttf) format('ttf');
-    font-weight: normal;
-    font-display: swap;
+  font-family: "Ubuntu";
+  src: url(assets/fonts/Ubuntu-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-display: swap;
 }
 
-:root{
-    --primary-colour: #3a414b;
-    --secondary-colour: #4a525e;
-    --text: #e1e5ea;
-    --accent: #5c9ce6;
-    --font-1: 'Cinzel', serif;
-    --font-2: 'Ubuntu', sans-serif;
+:root {
+  --primary-colour: #3a414b;
+  --secondary-colour: #4a525e;
+  --text: #e1e5ea;
+  --accent: #5c9ce6;
+  --font-1: "Cinzel", serif;
+  --font-2: "Ubuntu", sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 
-body{
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: var(--primary-colour);
-    font-family: var(--font-1);
+body {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-colour);
+  font-family: var(--font-1);
 }
