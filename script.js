@@ -18,6 +18,9 @@ function addAndSort() {
     });
   }
   console.log(studentArray);
+}
+
+function renderList() {
   inputList.textContent = "";
   const listHead = document.createElement("div");
   const headName = document.createElement("p");
@@ -54,4 +57,5 @@ function addAndSort() {
 
 submitScore.addEventListener("click", () => {
   addAndSort();
+  renderList();
 });
