@@ -16,10 +16,13 @@
 :root {
   --primary-colour: #3a414b;
   --secondary-colour: #4a525e;
-  --text: #e1e5ea;
+  --text: hsl(213, 30%, 95%);
   --accent: #5c9ce6;
   --font-1: "Cinzel", serif;
   --font-2: "Ubuntu", sans-serif;
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-bold: 700;
   --border: 2px solid var(--accent);
 }
 
@@ -50,33 +53,37 @@ body {
 }
 
 nav{
-  padding: 16px;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 nav a{
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
   color: var(--text);
 }
 
 header{
-  padding: 16px;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header img{
-  width: 50%;
-  max-width: 400px;
+header i{
+font-size: 4rem;
+  color: var(--text);
 }
 
 main{
-  padding: 32px;
+  padding: 2rem;
 }
 
 .input_section{
+  max-width: 50rem;
+  margin: auto;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -86,25 +93,33 @@ main{
 }
 
 .input_section input{
-  max-width: 150px;
+  min-width: 0;
   padding: .5rem;
   flex: 1;
   font-family: var(--font-2);
   font-size: .8rem;
 }
 
-/* .input_section .student_score{
-  width: ;
-} */
-
 .input_list{
   width: 80%;
+  max-width: 40rem;
   margin: 2rem auto;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   color: var(--text);
   border: var(--border);
+}
+
+#submitScore{
+  padding: .5rem 1rem;
+  font-family: var(--font-1);
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  background: var(--accent);
+  color: var(--text);
+  border: none;
+  cursor: pointer;
 }
 
 .list_head{
@@ -118,13 +133,15 @@ main{
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  align-items: center;
+  font-family: var(--font-2);
 
 }
 
 .list_wrap{
+  padding: 1rem;
+  width: 70%;
+  max-width: 40rem;
   display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  border: var(--border);
+  justify-content: space-between;
 }
