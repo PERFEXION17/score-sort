@@ -52,36 +52,36 @@ body {
   font-family: var(--font-1);
 }
 
-nav{
+nav {
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-nav a{
+nav a {
   font-size: 2rem;
   font-weight: var(--fw-bold);
   color: var(--text);
 }
 
-header{
+header {
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header i{
-font-size: 4rem;
+header i {
+  font-size: 4rem;
   color: var(--text);
 }
 
-main{
+main {
   padding: 2rem;
 }
 
-.input_section{
+.input_section {
   max-width: 50rem;
   margin: auto;
   padding: 1rem;
@@ -92,15 +92,24 @@ main{
   border: var(--border);
 }
 
-.input_section input{
+.input_section input {
   min-width: 0;
-  padding: .5rem;
+  padding: 0.5rem;
   flex: 1;
   font-family: var(--font-2);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-.input_list{
+.render_section{
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input_list {
   width: 80%;
   max-width: 40rem;
   margin: 2rem auto;
@@ -111,8 +120,8 @@ main{
   border: var(--border);
 }
 
-#submitScore{
-  padding: .5rem 1rem;
+#submitScore {
+  padding: 0.5rem 1rem;
   font-family: var(--font-1);
   font-size: 1rem;
   font-weight: var(--fw-bold);
@@ -122,26 +131,36 @@ main{
   cursor: pointer;
 }
 
-.list_head{
+.list_head {
   padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   border-bottom: var(--border);
 }
 
-.list_body{
+.list_body {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: var(--font-2);
-
 }
 
-.list_wrap{
+.list_wrap {
   padding: 1rem;
   width: 70%;
   max-width: 40rem;
   display: flex;
   justify-content: space-between;
+}
+
+#sortBtn {
+  padding: 0.5rem 1rem;
+  font-family: var(--font-1);
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  background: var(--accent);
+  color: var(--text);
+  border: none;
+  cursor: pointer;
 }
