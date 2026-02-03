@@ -4,7 +4,7 @@ const submitScore = document.getElementById("submitScore");
 const inputList = document.getElementById("inputList");
 const studentArray = [];
 
-function displayInputList() {
+function addAndSort() {
   const inputName = studentName.value.trim();
   const inputScore = Number(studentScore.value);
 
@@ -53,5 +53,5 @@ function displayInputList() {
 }
 
 submitScore.addEventListener("click", () => {
-  displayInputList();
+  addAndSort();
 });
