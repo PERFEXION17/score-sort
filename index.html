@@ -1,41 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
     />
-    <title>Score Sort
-    </title>
-</head>
-<body>
+    <title>Score Sort</title>
+  </head>
+  <body>
     <nav><a href="index.html">SCORE SORT</a></nav>
     <header>
-        <i class="ph ph-sort-ascending"></i>
+      <i class="ph ph-sort-ascending"></i>
     </header>
-    
+
     <main>
-        <section class="input_section">
-            <input type="text" placeholder="Student's Name" id="studentName">
-            <input type="number" placeholder="Student's Score" id="studentScore" class="student_score">
-            <button id="submitScore">Submit</button>
-        </section>
-        <section class="render_section">
-            <div id="inputList" class="input_list">
-            </div>
+      <section class="input_section">
+        <div class="subject_field">
+          <input type="text" placeholder="Subject" id="subjectInput" />
+          <button id="subjectSubmit" class="btns">Submit</button>
+        </div>
 
-            <button id="sortBtn">Sort <i class="ph ph-caret-double-down"></i></button>
-        </section>
-        <hr>
-        <section id="sortedList">
+        <div class="name_score_field">
+          <input type="text" placeholder="Student's Name" id="studentName" />
+          <input
+            type="number"
+            placeholder="Student's Score"
+            id="studentScore"
+            class="student_score"
+          />
+          <button id="submitScore" class="btns">Submit</button>
+        </div>
+      </section>
 
-        </section>
+      <section class="render_section">
+        <div id="inputList" class="input_list"></div>
+      </section>
+      <hr />
+
+      <section class="render_section">
+        <div id="subjectDisplay"></div>
+        <div id="sortedList" class="input_list"></div>
+
+        <div class="action_btns">
+          <button id="sortBtn" class="btns">
+            Sort <i class="ph ph-caret-double-down"></i>
+          </button>
+          <button id="clearBtn" class="btns clear_btn">Clear List</button>
+          <button id="printBtn" class="btns">
+            Print <i class="ph ph-file-arrow-down"></i>
+          </button>
+        </div>
+      </section>
     </main>
 
+    <footer>
+        &copy;2026 PERFEXION INC. All Rights Reserved
+    </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
